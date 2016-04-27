@@ -63,8 +63,9 @@ body {
     border-bottom: solid #404040 0.3125em; }
 
 .chart-container {
-  margin-bottom: 1em;
-  padding-bottom: 5em; }
+  margin-bottom: 5em;
+  padding-bottom: 5em;
+  height: 40.26em; }
 
 .chart-options {
   list-style: none;
@@ -118,7 +119,7 @@ footer {
   border-top: 0.03125em solid lightgrey;
   height: 3.2em;
   width: 100%;
-  position: relative;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0; }
@@ -128,7 +129,7 @@ footer {
     footer .foot ul li {
       list-style: none;
       display: inline-block;
-      padding: 0 1em 0 1em;
+      padding: 0 1.2em 0 1.2em;
       font-size: 1em;
       width: 12.5em; }
       footer .foot ul li a {
