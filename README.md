@@ -1,8 +1,28 @@
+## About This Project
+
+Raspberry Pi Sensors:
+---------------------
+-
+Mother Sensors:
+---------------
+-Mother Sensor
+-Cookies
+--Temperature (Oven)
+--Temperature (Flat)
+--Temperature (Shower)
+--Motion (Door)
+AngularJS
+FusionCharts
+PHP
+MySQL
+HTML5
+SASS
+
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the SmarterShare repository and install the dependencies:
 
-### Clone angular-seed
+### Clone SmarterShare
 
 Clone the angular-seed repository using [git][git]:
 
@@ -18,7 +38,7 @@ npm install
 
 ### Run the Application
 
-We have preconfigured the project with a simple development web server.  The simplest way to start
+The project is preconfigured with a simple development web server.  The simplest way to start
 this server is:
 
 ```
@@ -28,10 +48,6 @@ npm start
 Now browse to the app at `http://localhost:8000/app/index.html`.
 
 ## Updating Angular
-
-Previously we recommended that you merge in changes to angular-seed into your own fork of the project.
-Now that the angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools instead to update the dependencies.
 
 You can update the tool dependencies by running:
 
@@ -62,3 +78,10 @@ For more information on AngularJS please check out http://angularjs.org/
 [karma]: http://karma-runner.github.io
 [travis]: https://travis-ci.org/
 [http-server]: https://github.com/nodeapps/http-server
+
+## References
+
+http://www.freepik.com/free-vector/light-bulb-icons_764593.htm Light bulb: Designed by Freepik
+http://www.freepik.com/free-vector/home-and-family-icon_762205.htm House: Designed by Freepik
+https://www.raspberrypi.org Raspberry Pi
+https://sen.se/mother/ Mother

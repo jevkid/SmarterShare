@@ -1,131 +1,140 @@
 body {
   color: #000;
   margin: 0;
-  font-family: "Karla"; }
+  font-family: "Quicksand"; }
 
 .navbar {
   display: inline-block;
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25em 0;
   background: #E8E8E8;
   border-bottom: 0.5px solid lightgrey; }
-  .navbar .title {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 1.5em; }
   .navbar ul li {
     list-style: none;
     display: inline-block;
     padding: 0 1em 0 1em;
     margin-top: auto;
-    margin-bottom: auto; }
+    margin-bottom: auto;
+    font-family: "Poiret One"; }
     .navbar ul li a {
       color: #404040;
       text-decoration: none; }
     .navbar ul li a:hover {
-      color: #A5C45B; }
+      color: #A0BA97; }
   .navbar .right {
-    float: right; }
+    float: right;
+    display: inline-block;
+    font-size: 1.15em;
+    margin: 0;
+    padding: 1.55em; }
   .navbar .left {
-    float: left; }
+    float: left;
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 1.2em; }
 
 .logo {
   width: 6em;
   display: inline-block;
-  margin-top: 5px; }
+  margin-top: 0.3em; }
   .logo img {
     width: 3em;
     margin: auto; }
 
 .login, .signup {
-  width: 300px;
+  width: 18.75em;
   height: auto;
-  padding: 15px;
+  padding: 0.9375em;
   background: #E8E8E8;
-  border-radius: 3px;
+  border-radius: 0.1875em;
   margin: auto; }
   .login form, .signup form {
-    margin-top: 1px; }
+    margin-top: 0.0625em; }
 
 .dash-options {
   margin: auto;
-  width: 500px; }
+  width: 31.25em; }
   .dash-options img {
-    height: 200px;
-    margin: 150px 50px 15px 50px;
+    height: 12.5em;
+    margin: 0.9375em 3.125em 0.9375em 3.125em;
     padding: 0; }
   .dash-options .pi:hover, .dash-options .mother:hover {
-    border-bottom: solid #404040 5px; }
+    border-bottom: solid #404040 0.3125em; }
+
+.chart-container {
+  margin-bottom: 1em;
+  padding-bottom: 5em; }
 
 .chart-options {
   list-style: none;
-  width: 500px;
+  width: 31.25em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625em; }
   .chart-options li {
     display: inline-block;
     padding: 0 1em 0 1em; }
 
 .data-chart {
-  width: 1270px;
+  width: 79.375em;
   margin-left: auto; }
   .data-chart h1 {
     font-size: 1.2em;
-    width: 635px; }
+    width: 39.6875em; }
 
 .btn1 {
-  padding: 6px 6px 6px 6px;
-  margin: 6px 6px 6px 6px;
-  min-width: 88px;
+  padding: 0.375em 0.375em 0.375em 0.375em;
+  margin: 0.375em 0.375em 0.375em 0.375em;
+  min-width: 5.5em;
   font-size: 1.2em;
-  background-color: #A5C45B;
+  background-color: #A0BA97;
   color: #404040;
-  border-radius: 3px;
-  font-size: 14px;
+  border-radius: 0.1875em;
+  font-size: 0.875em;
   text-align: center;
   text-decoration: none;
   cursor: pointer; }
 
 .btn2 {
-  padding: 6px 6px 6px 6px;
-  margin: 6px 6px 6px 6px;
-  min-width: 88px;
+  padding: 0.375em 0.375em 0.375em 0.375em;
+  margin: 0.375em 0.375em 0.375em 0.375em;
+  min-width: 5.5em;
   font-size: 1.2em;
   background-color: #404040;
   color: #E8E8E8;
-  border-radius: 3px;
-  font-size: 14px;
+  border-radius: 0.1875em;
+  font-size: 0.875em;
   text-align: center;
   text-decoration: none;
   cursor: pointer; }
 
 .btn1:hover {
   background-color: #404040;
-  color: #A5C45B; }
+  color: #A0BA97; }
 
 footer {
   background: #E8E8E8;
-  border-top: 0.5px solid lightgrey;
-  height: 50px;
+  border-top: 0.03125em solid lightgrey;
+  height: 3.2em;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   left: 0; }
   footer .foot {
-    width: 200px;
+    width: 12.5em;
     display: inline; }
     footer .foot ul li {
       list-style: none;
       display: inline-block;
       padding: 0 1em 0 1em;
-      font-size: 12px;
-      width: 200px; }
+      font-size: 1em;
+      width: 12.5em; }
       footer .foot ul li a {
         color: #404040;
         text-decoration: none; }
       footer .foot ul li a:hover {
-        color: #A5C45B; }
+        color: #A0BA97; }
 
 /*# sourceMappingURL=style.css.map */
