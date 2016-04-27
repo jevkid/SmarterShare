@@ -60,7 +60,7 @@ body {
     margin: 0.9375em 3.125em 0.9375em 3.125em;
     padding: 0; }
   .dash-options .pi:hover, .dash-options .mother:hover {
-    border-bottom: solid #404040 0.3125em; }
+    height: 13.5em; }
 
 .chart-container {
   margin-bottom: 5em;
@@ -76,6 +76,15 @@ body {
   .chart-options li {
     display: inline-block;
     padding: 0 1em 0 1em; }
+  .chart-options .chart-options-pi {
+    list-style: none;
+    width: 31.25em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.625em; }
+    .chart-options .chart-options-pi li {
+      display: inline-block;
+      padding: 0 1em 0 1em; }
 
 .data-chart {
   width: 79.375em;
