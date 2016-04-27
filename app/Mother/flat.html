@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<html ng-app="homePage">
+<head>
+    <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/app/styles/style.css">
+    <!--AngularJS-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+
+    <!--Fusion Chart-->
+        <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+        <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+    <!--End Fusion Chart-->
+
+    <!--Image Reference-->
+        <!--<a href='http://www.freepik.com/free-vector/light-bulb-icons_764593.htm'>Designed by Freepik</a>-->
+        <!--<a href='http://www.freepik.com/free-vector/home-and-family-icon_762205.htm'>Designed by Freepik</a>-->
+    <!--End Image Reference-->
+
+    <!--Flat API Reference-->
+        <!--https://apis.sen.se/v2/feeds/KY0o6dFjgX5Q1fjf49Fv67IGji2oCPM6/events/-->
+
+    <!--Fusion Script-->
+        <script type="text/javascript">
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                        type: 'line',
+                        renderAt: 'chart-container',
+                        width: '1100',
+                        height: '600',
+                        dataFormat: 'json',
+                        dataSource: {
+                            "chart": {
+                                "caption": "Flat Temperature Data",
+                                "subCaption": "April 28th 2016",
+                                "xAxisName": "Time",
+                                "yAxisName": "Temperature",
+
+                                //Cosmetics
+                                "lineThickness": "2",
+                                "paletteColors": "#A5C45B",
+                                "baseFontColor": "#333333",
+                                "baseFont": "Helvetica Neue,Arial",
+                                "captionFontSize": "14",
+                                "subcaptionFontSize": "12",
+                                "subcaptionFontBold": "0",
+                                "showBorder": "0",
+                                "bgColor": "#ffffff",
+                                "showShadow": "0",
+                                "canvasBgColor": "#ffffff",
+                                "canvasBorderAlpha": "0",
+                                "divlineAlpha": "100",
+                                "divlineColor": "#999999",
+                                "divlineThickness": "1",
+                                "divLineIsDashed": "1",
+                                "divLineDashLen": "0",
+                                "divLineGapLen": "1",
+                                "showXAxisLine": "1",
+                                "xAxisLineThickness": "1",
+                                "xAxisLineColor": "#999999",
+                                "showAlternateHGridColor": "0",
+                                "showValues": "0"
+
+
+                            },
+                            "data": [
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "23:57",
+                                    "value": 32.71
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "23:42",
+                                    "value": 32.46
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "23:27",
+                                    "value": 32.33
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "23:12",
+                                    "value": 32.13
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "22:57",
+                                    "value": 31.90
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "22:42",
+                                    "value": 31.55
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "22:27",
+                                    "value": 30.99
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "22:12",
+                                    "value": 30.65
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "21:57",
+                                    "value": 30.18
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "21:42",
+                                    "value": 29.25
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "21:27",
+                                    "value": 27.52
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "21:12",
+                                    "value": 25.75
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "20:57",
+                                    "value": 24.45
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "20:42",
+                                    "value": 22.35
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "20:27",
+                                    "value": 16.78
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "20:12",
+                                    "value": 16.78
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "19:57",
+                                    "value": 16.85
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "19:42",
+                                    "value": 16.88
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "19:27",
+                                    "value": 16.90
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "19:12",
+                                    "value": 16.97
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "18:57",
+                                    "value": 17.04
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "18:42",
+                                    "value": 17.08
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "18:27",
+                                    "value": 17.11
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "18:12",
+                                    "value": 17.20
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "17:57",
+                                    "value": 17.24
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "17:42",
+                                    "value": 17.31
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "17:27",
+                                    "value": 17.31
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "17:12",
+                                    "value": 17.40
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "16:57",
+                                    "value": 17.47
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "16:42",
+                                    "value": 17.57
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "16:27",
+                                    "value": 17.50
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "16:12",
+                                    "value": 17.63
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "15:57",
+                                    "value": 17.73
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "15:42",
+                                    "value": 17.86
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "15:27",
+                                    "value": 17.93
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "15:12",
+                                    "value": 17.93
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "14:57",
+                                    "value": 18.02
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "14:42",
+                                    "value": 18.13
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "14:27",
+                                    "value": 18.20
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "14:12",
+                                    "value": 18.29
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "13:57",
+                                    "value": 18.42
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "13:42",
+                                    "value": 18.51
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "13:27",
+                                    "value": 18.67
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "13:12",
+                                    "value": 18.83
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "12:57",
+                                    "value": 19.06
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "12:42",
+                                    "value": 19.06
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "12:27",
+                                    "value": 19.35
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "12:46",
+                                    "value": 19.58
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "11:57",
+                                    "value": 20.00
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "11:42",
+                                    "value": 20.75
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "11:27",
+                                    "value": 20.50
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "11:12",
+                                    "value": 21.06
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "10:57",
+                                    "value": 21.47
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "10:42",
+                                    "value": 22.38
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "10:27",
+                                    "value": 23.49
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "10:12",
+                                    "value": 24.95
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "09:57",
+                                    "value": 27.01
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "09:42",
+                                    "value": 29.65
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "09:27",
+                                    "value": 28.55
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "09:12",
+                                    "value": 27.23
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "08:57",
+                                    "value": 26.38
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "08:42",
+                                    "value": 25.10
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "08:27",
+                                    "value": 17.70
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "08:12",
+                                    "value": 17.31
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "07:57",
+                                    "value": 17.34
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "07:42",
+                                    "value": 17.38
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "07:27",
+                                    "value": 17.40
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "07:12",
+                                    "value": 17.40
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "06:57",
+                                    "value": 17.45
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "06:42",
+                                    "value": 17.47
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "06:27",
+                                    "value": 17.55
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "06:12",
+                                    "value": 17.50
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "05:57",
+                                    "value": 17.57
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "05:42",
+                                    "value": 17.61
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "05:27",
+                                    "value": 17.67
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "05:12",
+                                    "value": 17.73
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "04:57",
+                                    "value": 17.77
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "04:42",
+                                    "value": 17.80
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "04:27",
+                                    "value": 17.86
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "04:12",
+                                    "value": 17.90
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "03:57",
+                                    "value": 17.93
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "03:42",
+                                    "value": 17.97
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "03:27",
+                                    "value": 18.02
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "03:12",
+                                    "value": 18.09
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "02:57",
+                                    "value": 18.13
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "02:42",
+                                    "value": 18.20
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "02:27",
+                                    "value": 18.26
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "02:12",
+                                    "value": 18.35
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "01:57",
+                                    "value": 18.38
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "01:42",
+                                    "value": 18.49
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "01:27",
+                                    "value": 18.58
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "01:12",
+                                    "value": 18.67
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "00:57",
+                                    "value": 18.80
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "00:42",
+                                    "value": 18.93
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "00:27",
+                                    "value": 19.09
+                                },
+                                {
+                                    "date": "2016-04-25",
+                                    "label": "00:12",
+                                    "value": 19.29
+                                }
+                            ],
+                            "trendlines": [{
+                                "line": [{
+                                    "startvalue": "18500",
+                                    "color": "#1aaf5d",
+                                    "valueOnRight": "1",
+                                    "thickness": "2"
+                                }]
+                            }]
+                        }
+                    }
+            );
+            fusioncharts.render();
+        });
+    </script>
+    <!--End Fusion Script-->
+    <title>SmarterShare</title>
+</head>
+<!--Main Container-->
+<div class = "container">
+    <!--Navigation-->
+    <nav class = "navbar">
+        <div class = "logo"><img src = "/app/img/logo.png"></div>
+        <ul class = "left">
+            <li class = "title"><a href = "/index.html">Smarter Share</a></li>
+        </ul>
+        <ul class = "right">
+            <li><a href = "/app/login.html">Login</a></li>
+            <li><a href = "/app/signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <!--End Navigation-->
+
+    <!--Display Selected Chart-->
+    <div class = "data-chart">
+        <!--Data/Chart Options-->
+        <div class = "chart-options">
+            <a class = "btn1" href = "motherDash.html">All Data</a>
+            <a class = "btn2" href = "flat.html">Temperature</a>
+            <a class = "btn1" href = "door.html">Door</a>
+            <a class = "btn1" href = "oven.html">Oven</a>
+            <a class = "btn1" href = "shower.html">Shower</a>
+        </div>
+        <!--End Data/Chart Options-->
+        <h1>Current Flat Temperature: 17&deg;</h1>
+        <div id="chart-container"></div>
+    </div>
+    <!--End Display Selected Chart-->
+</div>
+<!--Footer-->
+<footer>
+    <div class = "foot">
+        <center>
+            <ul>
+                <li>&#169;Smarter Share</li>
+                <li><a href="github.com">Source code</a></li>
+            </ul>
+        </center>
+    </div>
+</footer>
+<!--End Footer-->
+</body>
+</html>

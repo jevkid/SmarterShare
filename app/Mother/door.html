@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html ng-app="homePage">
+<head>
+    <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/app/styles/style.css">
+    <!--AngularJS-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+
+    <!--Fusion Chart-->
+        <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+        <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+    <!--End Fusion Chart-->
+
+    <!--Image Reference-->
+        <!--<a href='http://www.freepik.com/free-vector/light-bulb-icons_764593.htm'>Designed by Freepik</a>-->
+        <!--<a href='http://www.freepik.com/free-vector/home-and-family-icon_762205.htm'>Designed by Freepik</a>-->
+    <!--End Image Reference-->
+
+    <!--Door API Reference-->
+        <!--https://apis.sen.se/v2/feeds/mnX0Z507KrIIz9ePMQJK9jnXLtzNfEYE/events/-->
+    <title>SmarterShare</title>
+</head>
+<!--Main Container-->
+<div class = "container">
+    <!--Navigation-->
+    <nav class = "navbar">
+        <div class = "logo"><img src = "/app/img/logo.png"></div>
+        <ul class = "left">
+            <li class = "title"><a href = "/app/index.html">Smarter Share</a></li>
+        </ul>
+        <ul class = "right">
+            <li><a href = "/app/login.html">Login</a></li>
+            <li><a href = "/app/signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <!--End Navigation-->
+
+    <!--Display Selected Chart-->
+    <div class = "data-chart">
+        <!--Data/Chart Options-->
+        <div class = "chart-options">
+            <a class = "btn1" href = "motherDash.html">All Data</a>
+            <a class = "btn1" href = "flat.html">Temperature</a>
+            <a class = "btn2" href = "door.html">Door</a>
+            <a class = "btn1" href = "oven.html">Oven</a>
+            <a class = "btn1" href = "shower.html">Shower</a>
+        </div>
+        <!--End Data/Chart Options-->
+        <h1>Last door movement: 10:23 April 28th</h1>
+        <div id="chart-container"></div>
+    </div>
+    <!--End Display Selected Chart-->
+</div>
+<!--Footer-->
+<footer>
+    <div class = "foot">
+        <center>
+            <ul>
+                <li>&#169;Smarter Share</li>
+                <li><a href="github.com">Source code</a></li>
+            </ul>
+        </center>
+    </div>
+</footer>
+<!--End Footer-->
+</body>
+</html>

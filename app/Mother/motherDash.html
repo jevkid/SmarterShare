@@ -1,0 +1,995 @@
+<!DOCTYPE HTML>
+<head>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/app/styles/style.css">
+    <!--AngularJS-->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+
+    <!--Fusion Chart-->
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+    <!--End Fusion Chart-->
+
+    <!--Image Reference-->
+    <!--<a href='http://www.freepik.com/free-vector/light-bulb-icons_764593.htm'>Designed by Freepik</a>-->
+    <!--<a href='http://www.freepik.com/free-vector/home-and-family-icon_762205.htm'>Designed by Freepik</a>-->
+    <!--End Image Reference-->
+
+    <!--Fusion Script-->
+    <script type="text/javascript">
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                        type: 'msline',
+                        renderAt: 'chart-container',
+                        width: '1100',
+                        height: '600',
+                        dataFormat: 'json',
+                        dataSource: {
+                            "chart": {
+                                "caption": "Data From All Sensors",
+                                "subCaption": "April 26th",
+                                "captionFontSize": "14",
+                                "subcaptionFontSize": "14",
+                                "subcaptionFontBold": "0",
+                                "paletteColors": "#A5C45B,#404040,#E8E8E8",
+                                "bgcolor": "#ffffff",
+                                "showBorder": "0",
+                                "showShadow": "0",
+                                "showCanvasBorder": "0",
+                                "usePlotGradientColor": "0",
+                                "legendBorderAlpha": "0",
+                                "legendShadow": "0",
+                                "showAlternateHGridColor": "0",
+                                "xAxisName": "Time",
+                                "showValues": "0"
+                            },
+                            "categories": [{
+                                "category": [
+                                    {
+                                        "label": "23:57"
+                                    }, {
+                                        "label": "23:42"
+                                    }, {
+                                        "label": "23:27"
+                                    }, {
+                                        "label": "23:12"
+                                    },
+                                    {
+                                        "label": "22:57"
+                                    }, {
+                                        "label": "22:42"
+                                    }, {
+                                        "label": "22:27"
+                                    }, {
+                                        "label": "22:12"
+                                    },
+                                    {
+                                        "label": "21:57"
+                                    }, {
+                                        "label": "21:42"
+                                    }, {
+                                        "label": "21:27"
+                                    }, {
+                                        "label": "21:12"
+                                    },
+                                    {
+                                        "label": "20:57"
+                                    }, {
+                                        "label": "20:42"
+                                    }, {
+                                        "label": "20:27"
+                                    }, {
+                                        "label": "20:12"
+                                    },
+                                    {
+                                        "label": "19:57"
+                                    }, {
+                                        "label": "19:42"
+                                    }, {
+                                        "label": "19:27"
+                                    }, {
+                                        "label": "19:12"
+                                    },
+                                    {
+                                        "label": "18:57"
+                                    }, {
+                                        "label": "18:42"
+                                    }, {
+                                        "label": "18:27"
+                                    }, {
+                                        "label": "18:12"
+                                    },
+                                    {
+                                        "label": "17:57"
+                                    }, {
+                                        "label": "17:42"
+                                    }, {
+                                        "label": "17:27"
+                                    }, {
+                                        "label": "17:12"
+                                    },
+                                    {
+                                        "label": "16:57"
+                                    }, {
+                                        "label": "16:42"
+                                    }, {
+                                        "label": "16:27"
+                                    }, {
+                                        "label": "16:12"
+                                    },
+                                    {
+                                        "label": "15:57"
+                                    }, {
+                                        "label": "15:42"
+                                    }, {
+                                        "label": "15:27"
+                                    }, {
+                                        "label": "15:12"
+                                    },
+                                    {
+                                        "label": "14:57"
+                                    }, {
+                                        "label": "14:42"
+                                    }, {
+                                        "label": "14:27"
+                                    }, {
+                                        "label": "14:12"
+                                    },
+                                    {
+                                        "label": "13:57"
+                                    }, {
+                                        "label": "13:42"
+                                    }, {
+                                        "label": "13:27"
+                                    }, {
+                                        "label": "13:12"
+                                    },
+                                    {
+                                        "label": "12:57"
+                                    }, {
+                                        "label": "12:42"
+                                    }, {
+                                        "label": "12:27"
+                                    }, {
+                                        "label": "12:12"
+                                    },
+                                    {
+                                        "label": "11:57"
+                                    }, {
+                                        "label": "11:42"
+                                    }, {
+                                        "label": "11:27"
+                                    }, {
+                                        "label": "11:12"
+                                    },
+                                    {
+                                        "label": "10:57"
+                                    }, {
+                                        "label": "10:42"
+                                    }, {
+                                        "label": "10:27"
+                                    }, {
+                                        "label": "10:12"
+                                    },
+                                    {
+                                        "label": "09:57"
+                                    }, {
+                                        "label": "09:42"
+                                    }, {
+                                        "label": "09:27"
+                                    }, {
+                                        "label": "09:12"
+                                    },
+                                    {
+                                        "label": "08:57"
+                                    }, {
+                                        "label": "08:42"
+                                    }, {
+                                        "label": "08:27"
+                                    }, {
+                                        "label": "08:12"
+                                    },
+                                    {
+                                        "label": "07:57"
+                                    }, {
+                                        "label": "07:42"
+                                    }, {
+                                        "label": "07:27"
+                                    }, {
+                                        "label": "07:12"
+                                    },
+                                    {
+                                        "label": "06:57"
+                                    }, {
+                                        "label": "06:42"
+                                    }, {
+                                        "label": "06:27"
+                                    }, {
+                                        "label": "06:12"
+                                    },
+                                    {
+                                        "label": "05:57"
+                                    }, {
+                                        "label": "05:42"
+                                    }, {
+                                        "label": "05:27"
+                                    }, {
+                                        "label": "05:12"
+                                    },
+                                    {
+                                        "label": "04:57"
+                                    }, {
+                                        "label": "04:42"
+                                    }, {
+                                        "label": "04:27"
+                                    }, {
+                                        "label": "04:12"
+                                    },
+                                    {
+                                        "label": "03:57"
+                                    }, {
+                                        "label": "03:42"
+                                    }, {
+                                        "label": "03:27"
+                                    }, {
+                                        "label": "03:12"
+                                    },
+                                    {
+                                        "label": "02:57"
+                                    }, {
+                                        "label": "02:42"
+                                    }, {
+                                        "label": "02:27"
+                                    }, {
+                                        "label": "02:12"
+                                    },
+                                    {
+                                        "label": "01:57"
+                                    }, {
+                                        "label": "01:42"
+                                    }, {
+                                        "label": "01:27"
+                                    }, {
+                                        "label": "01:12"
+                                    },
+                                    {
+                                        "label": "00:57"
+                                    }, {
+                                        "label": "00:42"
+                                    }, {
+                                        "label": "00:27"
+                                    }, {
+                                        "label": "00:12"
+                                    },
+                                ]
+                            }],
+                            "dataset": [{
+                                "seriesname": "Shower",
+                                "data": [{
+                                    "value": 19.29
+                                },{
+                                    "value": 19.18
+                                },{
+                                    "value": 19.06
+                                },{
+                                    "value": 18.96
+                                },{
+                                    "value": 18.71
+                                },{
+                                    "value": 18.60
+                                },{
+                                    "value": 18.42
+                                },{
+                                    "value": 18.20
+                                },{
+                                    "value": 17.97
+                                },{
+                                    "value": 17.77
+                                },{
+                                    "value": 17.50
+                                },{
+                                    "value": 16.90
+                                },{
+                                    "value": 16.71
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 15.92
+                                },{
+                                    "value": 16.03
+                                },{
+                                    "value": 16.03
+                                },{
+                                    "value": 16.05
+                                },{
+                                    "value": 16.12
+                                },{
+                                    "value": 16.12
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.26
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 16.38
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.26
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 17.97
+                                },{
+                                    "value": 18.22
+                                },{
+                                    "value": 16.05
+                                },{
+                                    "value": 16.08
+                                },{
+                                    "value": 16.15
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.12
+                                },{
+                                    "value": 16.12
+                                },{
+                                    "value": 16.21
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 16.35
+                                },{
+                                    "value": 16.45
+                                },{
+                                    "value": 16.55
+                                },{
+                                    "value": 16.58
+                                },{
+                                    "value": 16.75
+                                },{
+                                    "value": 16.67
+                                },{
+                                    "value": 16.78
+                                },{
+                                    "value": 16.65
+                                },{
+                                    "value": 16.71
+                                },{
+                                    "value": 17.01
+                                },{
+                                    "value": 17.38
+                                },{
+                                    "value": 18.51
+                                },{
+                                    "value": 21.60
+                                },{
+                                    "value": 19.35
+                                },{
+                                    "value": 16.88
+                                },{
+                                    "value": 16.97
+                                },{
+                                    "value": 17.11
+                                },{
+                                    "value": 17.08
+                                },{
+                                    "value": 16.71
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 15.89
+                                },{
+                                    "value": 15.45
+                                },{
+                                    "value": 14.77
+                                },{
+                                    "value": 14.70
+                                },{
+                                    "value": 14.75
+                                },{
+                                    "value": 14.82
+                                },{
+                                    "value": 14.91
+                                },{
+                                    "value": 14.94
+                                },{
+                                    "value": 14.94
+                                },{
+                                    "value": 15.01
+                                },{
+                                    "value": 15.05
+                                },{
+                                    "value": 15.12
+                                },{
+                                    "value": 15.18
+                                },{
+                                    "value": 15.25
+                                },{
+                                    "value": 15.30
+                                },{
+                                    "value": 15.35
+                                },{
+                                    "value": 15.45
+                                },{
+                                    "value": 15.48
+                                },{
+                                    "value": 15.48
+                                },{
+                                    "value": 15.55
+                                },{
+                                    "value": 15.62
+                                },{
+                                    "value": 15.68
+                                },{
+                                    "value": 15.72
+                                },{
+                                    "value": 15.75
+                                }, {
+                                    "value": 15.85
+                                },{
+                                    "value": 15.85
+                                },{
+                                    "value": 15.92
+                                },{
+                                    "value": 15.99
+                                },{
+                                    "value": 16.05
+                                },{
+                                    "value": 16.12
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 16.45
+                                },{
+                                    "value": 16.45
+                                },{
+                                    "value": 16.55
+                                },{
+                                    "value": 16.65
+                                }]
+                            }, {
+                                "seriesname": "Flat",
+                                "data": [{
+                                    "value": 32.71
+                                },
+                                    {
+                                        "value": 32.46
+                                    },
+                                    {
+                                        "value": 32.33
+                                    },
+                                    {
+                                        "value": 32.13
+                                    },
+                                    {
+                                        "value": 31.90
+                                    },
+                                    {
+                                        "value": 31.55
+                                    },
+                                    {
+                                        "value": 30.99
+                                    },
+                                    {
+                                        "value": 30.65
+                                    },
+                                    {
+                                        "value": 30.18
+                                    },
+                                    {
+                                        "value": 29.25
+                                    },
+                                    {
+                                        "value": 27.52
+                                    },
+                                    {
+                                        "value": 25.75
+                                    },
+                                    {
+                                        "value": 24.45
+                                    },
+                                    {
+                                        "value": 22.35
+                                    },
+                                    {
+                                        "value": 16.78
+                                    },
+                                    {
+                                        "value": 16.78
+                                    },
+                                    {
+                                        "value": 16.85
+                                    },
+                                    {
+                                        "value": 16.88
+                                    },
+                                    {
+                                        "value": 16.90
+                                    },
+                                    {
+                                        "value": 16.97
+                                    },
+                                    {
+                                        "value": 17.04
+                                    },
+                                    {
+                                        "value": 17.08
+                                    },
+                                    {
+                                        "value": 17.11
+                                    },
+                                    {
+                                        "value": 17.20
+                                    },
+                                    {
+                                        "value": 17.24
+                                    },
+                                    {
+                                        "value": 17.31
+                                    },
+                                    {
+                                        "value": 17.31
+                                    },
+                                    {
+                                        "value": 17.40
+                                    },
+                                    {
+                                        "value": 17.47
+                                    },
+                                    {
+                                        "value": 17.57
+                                    },
+                                    {
+                                        "value": 17.50
+                                    },
+                                    {
+                                        "value": 17.63
+                                    },
+                                    {
+                                        "value": 17.73
+                                    },
+                                    {
+                                        "value": 17.86
+                                    },
+                                    {
+                                        "value": 17.93
+                                    },
+                                    {
+                                        "value": 17.93
+                                    },
+                                    {
+                                        "value": 18.02
+                                    },
+                                    {
+                                        "value": 18.13
+                                    },
+                                    {
+                                        "value": 18.20
+                                    },
+                                    {
+                                        "value": 18.29
+                                    },
+                                    {
+                                        "value": 18.42
+                                    },
+                                    {
+                                        "value": 18.51
+                                    },
+                                    {
+                                        "value": 18.67
+                                    },
+                                    {
+                                        "value": 18.83
+                                    },
+                                    {
+                                        "value": 19.06
+                                    },
+                                    {
+                                        "value": 19.06
+                                    },
+                                    {
+                                        "value": 19.35
+                                    },
+                                    {
+                                        "value": 19.58
+                                    },
+                                    {
+                                        "value": 20.00
+                                    },
+                                    {
+                                        "value": 20.75
+                                    },
+                                    {
+                                        "value": 20.50
+                                    },
+                                    {
+                                        "value": 21.06
+                                    },
+                                    {
+                                        "value": 21.47
+                                    },
+                                    {
+                                        "value": 22.38
+                                    },
+                                    {
+                                        "value": 23.49
+                                    },
+                                    {
+                                        "value": 24.95
+                                    },
+                                    {
+                                        "value": 27.01
+                                    },
+                                    {
+                                        "value": 29.65
+                                    },
+                                    {
+                                        "value": 28.55
+                                    },
+                                    {
+                                        "value": 27.23
+                                    },
+                                    {
+                                        "value": 26.38
+                                    },
+                                    {
+                                        "value": 25.10
+                                    },
+                                    {
+                                        "value": 17.70
+                                    },
+                                    {
+                                        "value": 17.31
+                                    },
+                                    {
+                                        "value": 17.34
+                                    },
+                                    {
+                                        "value": 17.38
+                                    },
+                                    {
+                                        "value": 17.40
+                                    },
+                                    {
+                                        "value": 17.40
+                                    },
+                                    {
+                                        "value": 17.45
+                                    },
+                                    {
+                                        "value": 17.47
+                                    },
+                                    {
+                                        "value": 17.55
+                                    },
+                                    {
+                                        "value": 17.50
+                                    },
+                                    {
+                                        "value": 17.57
+                                    },
+                                    {
+                                        "value": 17.61
+                                    },
+                                    {
+                                        "value": 17.67
+                                    },
+                                    {
+                                        "value": 17.73
+                                    },
+                                    {
+                                        "value": 17.77
+                                    },
+                                    {
+                                        "value": 17.80
+                                    },
+                                    {
+                                        "value": 17.86
+                                    },
+                                    {
+                                        "value": 17.90
+                                    },
+                                    {
+                                        "value": 17.93
+                                    },
+                                    {
+                                        "value": 17.97
+                                    },
+                                    {
+                                        "value": 18.02
+                                    },
+                                    {
+                                        "value": 18.09
+                                    },
+                                    {
+                                        "value": 18.13
+                                    },
+                                    {
+                                        "value": 18.20
+                                    },
+                                    {
+                                        "value": 18.26
+                                    },
+                                    {
+                                        "value": 18.35
+                                    },
+                                    {
+                                        "value": 18.38
+                                    },
+                                    {
+                                        "value": 18.49
+                                    },
+                                    {
+                                        "value": 18.58
+                                    },
+                                    {
+                                        "value": 18.67
+                                    },
+                                    {
+                                        "value": 18.80
+                                    },
+                                    {
+                                        "value": 18.93
+                                    },
+                                    {
+                                        "value": 19.09
+                                    },
+                                    {
+                                        "value": 19.29
+                                    }]
+                            }, {
+                                "seriesname": "Oven",
+                                "data": [{
+                                    "value": 19.02
+                                },{
+                                    "value": 19.00
+                                },{
+                                    "value": 18.96
+                                },{
+                                    "value": 18.96
+                                },{
+                                    "value": 18.86
+                                },{
+                                    "value": 18.93
+                                },{
+                                    "value": 18.96
+                                },{
+                                    "value": 19.00
+                                },{
+                                    "value": 18.96
+                                },{
+                                    "value": 18.89
+                                },{
+                                    "value": 18.87
+                                },{
+                                    "value": 18.87
+                                },{
+                                    "value": 19.16
+                                },{
+                                    "value": 19.12
+                                },{
+                                    "value": 19.54
+                                },{
+                                    "value": 20.05
+                                },{
+                                    "value": 20.78
+                                },{
+                                    "value": 21.79
+                                },{
+                                    "value": 26.15
+                                },{
+                                    "value": 30.99
+                                },{
+                                    "value": 39.28
+                                },{
+                                    "value": 51.78
+                                },{
+                                    "value": 61.65
+                                },{
+                                    "value": 70.00
+                                },{
+                                    "value": 70.00
+                                },{
+                                    "value": 61.21
+                                },{
+                                    "value": 30.03
+                                },{
+                                    "value": 18.16
+                                },{
+                                    "value": 18.26
+                                },{
+                                    "value": 18.45
+                                },{
+                                    "value": 18.58
+                                },{
+                                    "value": 18.64
+                                },{
+                                    "value": 18.35
+                                },{
+                                    "value": 18.35
+                                },{
+                                    "value": 18.58
+                                },{
+                                    "value": 18.87
+                                },{
+                                    "value": 19.22
+                                },{
+                                    "value": 19.74
+                                },{
+                                    "value": 20.37
+                                },{
+                                    "value": 21.35
+                                },{
+                                    "value": 22.81
+                                },{
+                                    "value": 25.03
+                                },{
+                                    "value": 28.45
+                                },{
+                                    "value": 35.21
+                                },{
+                                    "value": 46.88
+                                },{
+                                    "value": 59.15
+                                },{
+                                    "value": 50.80
+                                },{
+                                    "value": 28.70
+                                },{
+                                    "value": 28.78
+                                },{
+                                    "value": 35.01
+                                },{
+                                    "value": 45.77
+                                },{
+                                    "value": 53.75
+                                },{
+                                    "value": 27.47
+                                },{
+                                    "value": 28.70
+                                },{
+                                    "value": 32.95
+                                },{
+                                    "value": 35.07
+                                },{
+                                    "value": 28.37
+                                },{
+                                    "value": 18.16
+                                },{
+                                    "value": 16.61
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.21
+                                },{
+                                    "value": 16.21
+                                },{
+                                    "value": 16.21
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.20
+                                },{
+                                    "value": 16.21
+                                },{
+                                    "value": 16.26
+                                },{
+                                    "value": 16.26
+                                },{
+                                    "value": 16.26
+                                },{
+                                    "value": 16.28
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 16.32
+                                },{
+                                    "value": 16.35
+                                },{
+                                    "value": 16.42
+                                },{
+                                    "value": 16.45
+                                },{
+                                    "value": 16.50
+                                },{
+                                    "value": 16.51
+                                },{
+                                    "value": 16.58
+                                },{
+                                    "value": 16.58
+                                },{
+                                    "value": 16.65
+                                },{
+                                    "value": 16.67
+                                },{
+                                    "value": 16.71
+                                },{
+                                    "value": 16.78
+                                },{
+                                    "value": 16.85
+                                },{
+                                    "value": 16.88
+                                },{
+                                    "value": 16.95
+                                },{
+                                    "value": 17.01
+                                },{
+                                    "value": 17.11
+                                }]
+                            }]
+                        }
+                    }
+            );
+            fusioncharts.render();
+        });
+    </script>
+    <!--End Fusion Script-->
+    <title>SmarterShare</title>
+</head>
+<!--Main Container-->
+<div class = "container">
+    <!--Navigation-->
+    <nav class = "navbar">
+        <div class = "logo"><img src = "/app/img/logo.png"></div>
+        <ul class = "left">
+            <li class = "title"><a href = "/app/index.html">Smarter Share</a></li>
+        </ul>
+        <ul class = "right">
+            <li><a href = "/app/login.html">Login</a></li>
+            <li><a href = "/app/signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <!--End Navigation-->
+
+    <!--Display Selected Chart-->
+    <div class = "data-chart">
+        <!--Data/Chart Options-->
+        <div class = "chart-options">
+            <a class = "btn2" href = "index.html">All Data</a>
+            <a class = "btn1" href = "flat.html">Temperature</a>
+            <a class = "btn1" href = "door.html">Door</a>
+            <a class = "btn1" href = "oven.html">Oven</a>
+            <a class = "btn1" href = "shower.html">Shower</a>
+        </div>
+        <!--End Data/Chart Options-->
+        <div id="chart-container"></div>
+    </div>
+    <!--End Display Selected Chart-->
+</div>
+<!--Footer-->
+<footer>
+    <div class = "foot">
+        <center>
+            <ul>
+                <li>&#169;Smarter Share</li>
+                <li><a href="github.com">Source code</a></li>
+            </ul>
+        </center>
+    </div>
+</footer>
+<!--End Footer-->
+</body>
+</html>
