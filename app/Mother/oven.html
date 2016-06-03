@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html ng-app="homePage">
 <head>
     <!--Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
@@ -23,18 +22,18 @@
                         type: 'line',
                         renderAt: 'chart-container',
                         width: '1100',
-                        height: '500',
+                        height: '450',
                         dataFormat: 'json',
                         dataSource: {
                             "chart": {
-                                "caption": "Shower Temperature Data",
+                                "caption": "Oven Temperature Data",
                                 "subCaption": "April 28th 2016",
                                 "xAxisName": "Time",
                                 "yAxisName": "Temperature",
 
                                 //Cosmetics
                                 "lineThickness": "2",
-                                "paletteColors": "#A5C45B",
+                                "paletteColors": "#A0BA97,#404040,#BAAD97",
                                 "baseFontColor": "#333333",
                                 "baseFont": "Helvetica Neue,Arial",
                                 "captionFontSize": "14",
@@ -547,7 +546,6 @@
 <div class = "container">
     <!--Navigation-->
     <nav class = "navbar">
-        <!--<div class = "logo"><img src = "/app/img/logo.png"></div>-->
         <ul class = "left">
             <li class = "title"><a href = "/index.html">Smarter Share</a></li>
         </ul>
@@ -569,7 +567,22 @@
             <a class = "btn1" href = "shower.html">Shower</a>
         </div>
         <!--End Data/Chart Options-->
+        <!--Flat Navigation Options-->
+        <div class = "linkNav">
+            <div class = "linkChart">
         <h1>Current Oven Temperature: 18&deg;</h1>
+        <a href="oven.html">Previous Day</a>
+            </div>
+            <!--On/Off Alerts-->
+            <div class="alerts">
+                Alerts
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+                <!--End On/Off Alerts-->
+            </div>
+            <!--End Door Navigation Options-->
         <div id="chart-container"></div>
     </div>
     <!--End Display Selected Chart-->

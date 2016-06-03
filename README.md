@@ -24,8 +24,6 @@ To get you started you can simply clone the SmarterShare repository and install 
 
 ### Clone SmarterShare
 
-Clone the angular-seed repository using [git][git]:
-
 ```
 git clone https://github.com/jevkid/SmarterShare.git
 ```
@@ -38,7 +36,7 @@ npm install
 
 ### Run the Application
 
-The project is preconfigured with a simple development web server.  The simplest way to start
+The project is preconfigured with a development web server. The simplest way to start
 this server is:
 
 ```

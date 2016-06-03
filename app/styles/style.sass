@@ -11,6 +11,8 @@ body
   margin: 0
   font-family: "Quicksand"
 
+  h1
+    font-family: "Karla"
 .navbar
   display: inline-block
   width: 100%
@@ -47,9 +49,6 @@ body
     font-size: 1.6em
     margin: 0
     padding: 1.2em
-
-
-  .title
 
 .logo
   width: 6em
@@ -138,15 +137,22 @@ body
   h1
     font-size: 1.2em
 
-.doorChart
-  width: 31.25em
-  margin-left: auto
-  margin-right: auto
-  margin-bottom: 0.625em
+.linkNav
+  width: 75em
+  margin: auto
 
-  a
-    width: 5em
-    margin-left: 3em
+  .linkChart
+    display: inline
+    float: left
+
+    a
+      margin-left: 1em
+
+  .alerts
+    float: right
+    display: inline
+    margin: 1em 5em 0 0
+
 
 .btn1
   padding: 0.375em 0.375em 0.375em 0.375em
@@ -205,3 +211,50 @@ footer
 
       a:hover
         color: $green
+
+//Proto.IO On/Off Switch CSS
+
+.onoffswitch
+  position: relative
+  width: 40px
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+
+.onoffswitch-checkbox
+  display: none
+
+.onoffswitch-label
+  display: block
+  overflow: hidden
+  cursor: pointer
+  height: 21px
+  padding: 0
+  line-height: 21px
+  border: 2px solid #CCCCCC
+  border-radius: 21px
+  background-color: #FFFFFF
+  transition: background-color 0.3s ease-in
+
+.onoffswitch-label:before
+  content: ""
+  display: block
+  width: 21px
+  margin: 0px
+  background: #FFFFFF
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 17px
+  border: 2px solid #CCCCCC
+  border-radius: 21px
+  transition: all 0.3s ease-in 0s
+
+.onoffswitch-checkbox:checked + .onoffswitch-label
+  background-color: #A0BA97
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before
+  border-color: #A0BA97
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before
+  right: 0px

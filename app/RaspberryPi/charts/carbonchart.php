@@ -19,7 +19,6 @@
 <div class = "container">
     <!--Navigation-->
     <nav class = "navbar">
-        <!--<div class = "logo"><img src = "/app/img/logo.png"></div>-->
         <ul class = "left">
             <li class = "title"><a href = "/app/index.html">Smarter Share</a></li>
         </ul>

@@ -1,4 +1,4 @@
-<html ng-app="homePage">
+<!DOCTYPE HTML>
 <head>
     <!--Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
@@ -19,7 +19,6 @@
 <div class = "container">
     <!--Navigation-->
     <nav class = "navbar">
-        <!--<div class = "logo"><img src = "/app/img/logo.png"></div>-->
         <ul class = "left">
             <li class = "title"><a href = "/app/index.html">Smarter Share</a></li>
         </ul>
@@ -46,6 +45,8 @@
         </div>
         <!--End Data/Chart Options-->
 <br><br>
+<!--Charts and PHP for this were done by the Raspberry Pi team-->
+
   	<?php
 
      	// Form the SQL query that returns the top 10 most populous countries

@@ -4,8 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.motherDash',
-  'myApp.piDash',
-  'myApp.version'
+  'myApp.piDash'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/motherDash'});

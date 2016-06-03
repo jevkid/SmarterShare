@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<html ng-app="homePage">
 <head>
     <!--Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
@@ -23,7 +22,7 @@
                         type: 'line',
                         renderAt: 'chart-container',
                         width: '1100',
-                        height: '500',
+                        height: '450',
                         dataFormat: 'json',
                         dataSource: {
                             "chart": {
@@ -34,7 +33,7 @@
 
                                 //Cosmetics
                                 "lineThickness": "2",
-                                "paletteColors": "#A5C45B",
+                                "paletteColors": "#A0BA97,#404040,#BAAD97",
                                 "baseFontColor": "#333333",
                                 "baseFont": "Helvetica Neue,Arial",
                                 "captionFontSize": "14",
@@ -584,10 +583,26 @@
             <a class = "btn1" href = "shower.html">Shower</a>
         </div>
         <!--End Data/Chart Options-->
-        <h1>Current Flat Temperature: 17&deg;</h1>
+        <!--Flat Navigation Options-->
+        <div class = "linkNav">
+            <div class = "linkChart">
+                <h1>Current Flat Temperature: 17&deg;</h1>
+                <a href="flat.html">Previous Day</a>
+            </div>
+            <!--On/Off Alerts-->
+            <div class="alerts">
+                Alerts
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+                <!--End On/Off Alerts-->
+            </div>
+            <!--End Door Navigation Options-->
         <div id="chart-container"></div>
-    </div>
+        </div>
     <!--End Display Selected Chart-->
+    </div>
 </div>
 <!--Footer-->
 <footer>

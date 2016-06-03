@@ -1,25 +1,24 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app="myApp">
 <head>
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
     <!--Stylesheets-->
-    <link rel="stylesheet" href="/app/styles/style.css">
+        <link rel="stylesheet" href="/app/styles/style.css">
     <!--AngularJS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="app.js"></script>
-    <script src="Mother/motherDash.js"></script>
-    <script src="RaspberryPi/piDash.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="app.js"></script>
+        <script src="Mother/motherDash.js"></script>
+        <script src="RaspberryPi/piDash.js"></script>
     <!--Fusion Chart-->
-    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+     <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+     <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
     <!--End Fusion Chart-->
 
     <!--Fusion Chart Script-->
+    <!--Charts for this were done by the Raspberry Pi team-->
     <script type='text/javascript'>
         $(document).ready(function(){
             /* call the php that has the php array which is json_encoded */
@@ -28,13 +27,10 @@
                 $.each(data, function(key, val) {
                     $('li1').append( val.humidity );
                     humidity = val.humidity;
-//alert(temp)
                 });
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csatGauge = new FusionCharts({
                 "type": "angulargauge",
@@ -90,13 +86,10 @@
                 $.each(data, function(key, val) {
                     $('li').append( val.co2 );
                     co2 = val.co2;
-//alert(temp)
                 });
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat1Gauge1 = new FusionCharts({
                 "type": "angulargauge",
@@ -158,8 +151,6 @@
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat2Gauge2 = new FusionCharts({
                 "type": "angulargauge",
@@ -207,7 +198,6 @@
             csat2Gauge2.render();
         });
     </script>
-
     <script type='text/javascript'>
         $(document).ready(function(){
             /* call the php that has the php array which is json_encoded */
@@ -221,8 +211,6 @@
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat3Gauge3 = new FusionCharts({
                 "type": "angulargauge",
@@ -270,8 +258,6 @@
             csat3Gauge3.render();
         });
     </script>
-
-
     <script type='text/javascript'>
         $(document).ready(function(){
             /* call the php that has the php array which is json_encoded */
@@ -285,8 +271,6 @@
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat4Gauge4 = new FusionCharts({
                 "type": "angulargauge",
@@ -334,7 +318,6 @@
             csat4Gauge4.render();
         });
     </script>
-
     <script type='text/javascript'>
         $(document).ready(function(){
             /* call the php that has the php array which is json_encoded */
@@ -348,8 +331,6 @@
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat5Gauge5 = new FusionCharts({
                 "type": "angulargauge",
@@ -397,7 +378,6 @@
             csat5Gauge5.render();
         });
     </script>
-
     <script type='text/javascript'>
         $(document).ready(function(){
             /* call the php that has the php array which is json_encoded */
@@ -411,8 +391,6 @@
             });
 
         });
-
-
         FusionCharts.ready(function () {
             var csat6Gauge6 = new FusionCharts({
                 "type": "angulargauge",
@@ -531,6 +509,7 @@
         </div>
         <!--End Display Selected Chart-->
     </div>
+</div>
     <!--Footer-->
 <footer>
     <div class = "foot">
