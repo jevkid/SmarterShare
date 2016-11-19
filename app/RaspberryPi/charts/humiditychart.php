@@ -3,7 +3,7 @@
     <!--Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|Catamaran:400,700,100|Karla:400,700|Poiret+One|Open+Sans' rel='stylesheet' type='text/css'>
     <!--Stylesheets-->
-    <link rel="stylesheet" href="/app/styles/style.css">
+    <link rel="stylesheet" href="/SmarterShare/app/styles/style.css">
     <!--AngularJS-->
         <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
 
